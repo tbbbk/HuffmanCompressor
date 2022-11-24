@@ -1,0 +1,3 @@
+"D:\CLion 2022.2.4\bin\cmake\win\bin\cmake.exe" -E rm -f CMakeFiles\Huffman_compressor.dir/objects.a
+D:\CLION2~1.4\bin\mingw\bin\ar.exe qc CMakeFiles\Huffman_compressor.dir/objects.a @CMakeFiles\Huffman_compressor.dir\objects1.rsp
+D:\CLION2~1.4\bin\mingw\bin\G__~1.EXE -g -Wl,--whole-archive CMakeFiles\Huffman_compressor.dir/objects.a -Wl,--no-whole-archive -o Huffman_compressor.exe -Wl,--out-implib,libHuffman_compressor.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\Huffman_compressor.dir\linklibs.rsp

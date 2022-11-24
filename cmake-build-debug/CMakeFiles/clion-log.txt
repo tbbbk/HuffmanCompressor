@@ -1,0 +1,4 @@
+"D:\CLion 2022.2.4\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=D:/mingw64/bin/mingw32-make.exe -G "CodeBlocks - MinGW Makefiles" -S D:\CLion_Code\Huffman_compressor -B D:\CLion_Code\Huffman_compressor\cmake-build-debug
+-- Configuring done
+-- Generating done
+-- Build files have been written to: D:/CLion_Code/Huffman_compressor/cmake-build-debug
