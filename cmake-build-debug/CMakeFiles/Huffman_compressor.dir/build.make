@@ -82,24 +82,38 @@ CMakeFiles/Huffman_compressor.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Huffman_compressor.dir/src/main.cpp.s"
 	D:\CLION2~1.4\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\CLion_Code\Huffman_compressor\src\main.cpp -o CMakeFiles\Huffman_compressor.dir\src\main.cpp.s
 
-CMakeFiles/Huffman_compressor.dir/src/Node.cpp.obj: CMakeFiles/Huffman_compressor.dir/flags.make
-CMakeFiles/Huffman_compressor.dir/src/Node.cpp.obj: ../src/Node.cpp
-CMakeFiles/Huffman_compressor.dir/src/Node.cpp.obj: CMakeFiles/Huffman_compressor.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\CLion_Code\Huffman_compressor\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Huffman_compressor.dir/src/Node.cpp.obj"
-	D:\CLION2~1.4\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Huffman_compressor.dir/src/Node.cpp.obj -MF CMakeFiles\Huffman_compressor.dir\src\Node.cpp.obj.d -o CMakeFiles\Huffman_compressor.dir\src\Node.cpp.obj -c D:\CLion_Code\Huffman_compressor\src\Node.cpp
+CMakeFiles/Huffman_compressor.dir/src/Utils/DataProcess.cpp.obj: CMakeFiles/Huffman_compressor.dir/flags.make
+CMakeFiles/Huffman_compressor.dir/src/Utils/DataProcess.cpp.obj: ../src/Utils/DataProcess.cpp
+CMakeFiles/Huffman_compressor.dir/src/Utils/DataProcess.cpp.obj: CMakeFiles/Huffman_compressor.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\CLion_Code\Huffman_compressor\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Huffman_compressor.dir/src/Utils/DataProcess.cpp.obj"
+	D:\CLION2~1.4\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Huffman_compressor.dir/src/Utils/DataProcess.cpp.obj -MF CMakeFiles\Huffman_compressor.dir\src\Utils\DataProcess.cpp.obj.d -o CMakeFiles\Huffman_compressor.dir\src\Utils\DataProcess.cpp.obj -c D:\CLion_Code\Huffman_compressor\src\Utils\DataProcess.cpp
 
-CMakeFiles/Huffman_compressor.dir/src/Node.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Huffman_compressor.dir/src/Node.cpp.i"
-	D:\CLION2~1.4\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\CLion_Code\Huffman_compressor\src\Node.cpp > CMakeFiles\Huffman_compressor.dir\src\Node.cpp.i
+CMakeFiles/Huffman_compressor.dir/src/Utils/DataProcess.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Huffman_compressor.dir/src/Utils/DataProcess.cpp.i"
+	D:\CLION2~1.4\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\CLion_Code\Huffman_compressor\src\Utils\DataProcess.cpp > CMakeFiles\Huffman_compressor.dir\src\Utils\DataProcess.cpp.i
 
-CMakeFiles/Huffman_compressor.dir/src/Node.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Huffman_compressor.dir/src/Node.cpp.s"
-	D:\CLION2~1.4\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\CLion_Code\Huffman_compressor\src\Node.cpp -o CMakeFiles\Huffman_compressor.dir\src\Node.cpp.s
+CMakeFiles/Huffman_compressor.dir/src/Utils/DataProcess.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Huffman_compressor.dir/src/Utils/DataProcess.cpp.s"
+	D:\CLION2~1.4\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\CLion_Code\Huffman_compressor\src\Utils\DataProcess.cpp -o CMakeFiles\Huffman_compressor.dir\src\Utils\DataProcess.cpp.s
+
+CMakeFiles/Huffman_compressor.dir/src/Utils/Node.cpp.obj: CMakeFiles/Huffman_compressor.dir/flags.make
+CMakeFiles/Huffman_compressor.dir/src/Utils/Node.cpp.obj: ../src/Utils/Node.cpp
+CMakeFiles/Huffman_compressor.dir/src/Utils/Node.cpp.obj: CMakeFiles/Huffman_compressor.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\CLion_Code\Huffman_compressor\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Huffman_compressor.dir/src/Utils/Node.cpp.obj"
+	D:\CLION2~1.4\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Huffman_compressor.dir/src/Utils/Node.cpp.obj -MF CMakeFiles\Huffman_compressor.dir\src\Utils\Node.cpp.obj.d -o CMakeFiles\Huffman_compressor.dir\src\Utils\Node.cpp.obj -c D:\CLion_Code\Huffman_compressor\src\Utils\Node.cpp
+
+CMakeFiles/Huffman_compressor.dir/src/Utils/Node.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Huffman_compressor.dir/src/Utils/Node.cpp.i"
+	D:\CLION2~1.4\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\CLion_Code\Huffman_compressor\src\Utils\Node.cpp > CMakeFiles\Huffman_compressor.dir\src\Utils\Node.cpp.i
+
+CMakeFiles/Huffman_compressor.dir/src/Utils/Node.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Huffman_compressor.dir/src/Utils/Node.cpp.s"
+	D:\CLION2~1.4\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\CLion_Code\Huffman_compressor\src\Utils\Node.cpp -o CMakeFiles\Huffman_compressor.dir\src\Utils\Node.cpp.s
 
 CMakeFiles/Huffman_compressor.dir/src/Utils/FileOperation.cpp.obj: CMakeFiles/Huffman_compressor.dir/flags.make
 CMakeFiles/Huffman_compressor.dir/src/Utils/FileOperation.cpp.obj: ../src/Utils/FileOperation.cpp
 CMakeFiles/Huffman_compressor.dir/src/Utils/FileOperation.cpp.obj: CMakeFiles/Huffman_compressor.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\CLion_Code\Huffman_compressor\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Huffman_compressor.dir/src/Utils/FileOperation.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\CLion_Code\Huffman_compressor\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Huffman_compressor.dir/src/Utils/FileOperation.cpp.obj"
 	D:\CLION2~1.4\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Huffman_compressor.dir/src/Utils/FileOperation.cpp.obj -MF CMakeFiles\Huffman_compressor.dir\src\Utils\FileOperation.cpp.obj.d -o CMakeFiles\Huffman_compressor.dir\src\Utils\FileOperation.cpp.obj -c D:\CLion_Code\Huffman_compressor\src\Utils\FileOperation.cpp
 
 CMakeFiles/Huffman_compressor.dir/src/Utils/FileOperation.cpp.i: cmake_force
@@ -113,20 +127,22 @@ CMakeFiles/Huffman_compressor.dir/src/Utils/FileOperation.cpp.s: cmake_force
 # Object files for target Huffman_compressor
 Huffman_compressor_OBJECTS = \
 "CMakeFiles/Huffman_compressor.dir/src/main.cpp.obj" \
-"CMakeFiles/Huffman_compressor.dir/src/Node.cpp.obj" \
+"CMakeFiles/Huffman_compressor.dir/src/Utils/DataProcess.cpp.obj" \
+"CMakeFiles/Huffman_compressor.dir/src/Utils/Node.cpp.obj" \
 "CMakeFiles/Huffman_compressor.dir/src/Utils/FileOperation.cpp.obj"
 
 # External object files for target Huffman_compressor
 Huffman_compressor_EXTERNAL_OBJECTS =
 
 Huffman_compressor.exe: CMakeFiles/Huffman_compressor.dir/src/main.cpp.obj
-Huffman_compressor.exe: CMakeFiles/Huffman_compressor.dir/src/Node.cpp.obj
+Huffman_compressor.exe: CMakeFiles/Huffman_compressor.dir/src/Utils/DataProcess.cpp.obj
+Huffman_compressor.exe: CMakeFiles/Huffman_compressor.dir/src/Utils/Node.cpp.obj
 Huffman_compressor.exe: CMakeFiles/Huffman_compressor.dir/src/Utils/FileOperation.cpp.obj
 Huffman_compressor.exe: CMakeFiles/Huffman_compressor.dir/build.make
 Huffman_compressor.exe: CMakeFiles/Huffman_compressor.dir/linklibs.rsp
 Huffman_compressor.exe: CMakeFiles/Huffman_compressor.dir/objects1.rsp
 Huffman_compressor.exe: CMakeFiles/Huffman_compressor.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=D:\CLion_Code\Huffman_compressor\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable Huffman_compressor.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=D:\CLion_Code\Huffman_compressor\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable Huffman_compressor.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\Huffman_compressor.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

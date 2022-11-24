@@ -4,22 +4,30 @@
 
 #ifndef HUFFMAN_COMPRESSOR_FILEOPERATION_H
 #define HUFFMAN_COMPRESSOR_FILEOPERATION_H
-#include <fstream>
-using namespace std;
 
+#include <iostream>
+#include <fstream>
+
+using namespace std;
 
 class FileOperation {
 private:
-    char* Buffer;
+    char *Buffer;
     fstream f;
-    long long length;
+    int length;
     string path;
 public:
-    void setPath(string path);
-    void BinaryRead();
-    void BinaryWrite();
-    char* getBuffer();
-};
+    ~FileOperation();
 
+    void setPath(string Path);
+
+    void BinaryRead();
+
+    void BinaryWrite();
+
+    char *getBuffer();
+
+    int Length() const;
+};
 
 #endif //HUFFMAN_COMPRESSOR_FILEOPERATION_H

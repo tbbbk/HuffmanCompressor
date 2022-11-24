@@ -128,29 +128,29 @@ Huffman_compressor/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Huffman_compressor.dir\build.make CMakeFiles/Huffman_compressor.dir/build
 .PHONY : Huffman_compressor/fast
 
-src/Node.obj: src/Node.cpp.obj
-.PHONY : src/Node.obj
+src/Utils/DataProcess.obj: src/Utils/DataProcess.cpp.obj
+.PHONY : src/Utils/DataProcess.obj
 
 # target to build an object file
-src/Node.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Huffman_compressor.dir\build.make CMakeFiles/Huffman_compressor.dir/src/Node.cpp.obj
-.PHONY : src/Node.cpp.obj
+src/Utils/DataProcess.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Huffman_compressor.dir\build.make CMakeFiles/Huffman_compressor.dir/src/Utils/DataProcess.cpp.obj
+.PHONY : src/Utils/DataProcess.cpp.obj
 
-src/Node.i: src/Node.cpp.i
-.PHONY : src/Node.i
+src/Utils/DataProcess.i: src/Utils/DataProcess.cpp.i
+.PHONY : src/Utils/DataProcess.i
 
 # target to preprocess a source file
-src/Node.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Huffman_compressor.dir\build.make CMakeFiles/Huffman_compressor.dir/src/Node.cpp.i
-.PHONY : src/Node.cpp.i
+src/Utils/DataProcess.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Huffman_compressor.dir\build.make CMakeFiles/Huffman_compressor.dir/src/Utils/DataProcess.cpp.i
+.PHONY : src/Utils/DataProcess.cpp.i
 
-src/Node.s: src/Node.cpp.s
-.PHONY : src/Node.s
+src/Utils/DataProcess.s: src/Utils/DataProcess.cpp.s
+.PHONY : src/Utils/DataProcess.s
 
 # target to generate assembly for a file
-src/Node.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Huffman_compressor.dir\build.make CMakeFiles/Huffman_compressor.dir/src/Node.cpp.s
-.PHONY : src/Node.cpp.s
+src/Utils/DataProcess.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Huffman_compressor.dir\build.make CMakeFiles/Huffman_compressor.dir/src/Utils/DataProcess.cpp.s
+.PHONY : src/Utils/DataProcess.cpp.s
 
 src/Utils/FileOperation.obj: src/Utils/FileOperation.cpp.obj
 .PHONY : src/Utils/FileOperation.obj
@@ -175,6 +175,30 @@ src/Utils/FileOperation.s: src/Utils/FileOperation.cpp.s
 src/Utils/FileOperation.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Huffman_compressor.dir\build.make CMakeFiles/Huffman_compressor.dir/src/Utils/FileOperation.cpp.s
 .PHONY : src/Utils/FileOperation.cpp.s
+
+src/Utils/Node.obj: src/Utils/Node.cpp.obj
+.PHONY : src/Utils/Node.obj
+
+# target to build an object file
+src/Utils/Node.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Huffman_compressor.dir\build.make CMakeFiles/Huffman_compressor.dir/src/Utils/Node.cpp.obj
+.PHONY : src/Utils/Node.cpp.obj
+
+src/Utils/Node.i: src/Utils/Node.cpp.i
+.PHONY : src/Utils/Node.i
+
+# target to preprocess a source file
+src/Utils/Node.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Huffman_compressor.dir\build.make CMakeFiles/Huffman_compressor.dir/src/Utils/Node.cpp.i
+.PHONY : src/Utils/Node.cpp.i
+
+src/Utils/Node.s: src/Utils/Node.cpp.s
+.PHONY : src/Utils/Node.s
+
+# target to generate assembly for a file
+src/Utils/Node.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Huffman_compressor.dir\build.make CMakeFiles/Huffman_compressor.dir/src/Utils/Node.cpp.s
+.PHONY : src/Utils/Node.cpp.s
 
 src/main.obj: src/main.cpp.obj
 .PHONY : src/main.obj
@@ -209,12 +233,15 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... Huffman_compressor
-	@echo ... src/Node.obj
-	@echo ... src/Node.i
-	@echo ... src/Node.s
+	@echo ... src/Utils/DataProcess.obj
+	@echo ... src/Utils/DataProcess.i
+	@echo ... src/Utils/DataProcess.s
 	@echo ... src/Utils/FileOperation.obj
 	@echo ... src/Utils/FileOperation.i
 	@echo ... src/Utils/FileOperation.s
+	@echo ... src/Utils/Node.obj
+	@echo ... src/Utils/Node.i
+	@echo ... src/Utils/Node.s
 	@echo ... src/main.obj
 	@echo ... src/main.i
 	@echo ... src/main.s

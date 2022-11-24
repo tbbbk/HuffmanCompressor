@@ -82,16 +82,19 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="D:/CLion_Code/Huffman_compressor/src/Node.cpp">
-			<Option target="Huffman_compressor"/>
-		</Unit>
-		<Unit filename="D:/CLion_Code/Huffman_compressor/src/Node.h">
+		<Unit filename="D:/CLion_Code/Huffman_compressor/src/Utils/DataProcess.cpp">
 			<Option target="Huffman_compressor"/>
 		</Unit>
 		<Unit filename="D:/CLion_Code/Huffman_compressor/src/Utils/FileOperation.cpp">
 			<Option target="Huffman_compressor"/>
 		</Unit>
 		<Unit filename="D:/CLion_Code/Huffman_compressor/src/Utils/FileOperation.h">
+			<Option target="Huffman_compressor"/>
+		</Unit>
+		<Unit filename="D:/CLion_Code/Huffman_compressor/src/Utils/Node.cpp">
+			<Option target="Huffman_compressor"/>
+		</Unit>
+		<Unit filename="D:/CLion_Code/Huffman_compressor/src/Utils/Node.h">
 			<Option target="Huffman_compressor"/>
 		</Unit>
 		<Unit filename="D:/CLion_Code/Huffman_compressor/src/main.cpp">
