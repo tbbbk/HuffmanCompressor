@@ -42,6 +42,11 @@ char *FileOperation::getBuffer() {
     return this->Buffer;
 }
 
+void FileOperation::setBuffer(char *Buffer, int length) {
+    this->Buffer = Buffer;
+    this->length = length;
+}
+
 int FileOperation::Length() const {
     return this->length;
 }

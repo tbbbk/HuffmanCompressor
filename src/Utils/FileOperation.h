@@ -27,6 +27,8 @@ public:
 
     char *getBuffer();
 
+    void setBuffer(char Buffer[], int length);
+
     int Length() const;
 };
 
