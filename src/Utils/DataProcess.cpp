@@ -70,8 +70,8 @@ PNI static CreateHuffmanTree(priority_queue<Node> q) {
 }
 
 map<char, pair<char *, int>> static HuffmanCode(PNI args) {
-    double all = 69640;
-    double avglen = 0;
+//    double all = 69640;
+//    double avglen = 0;
     map<char, pair<char *, int>> MII;
     Node *tree = args.first;
     int size = args.second;
@@ -86,21 +86,11 @@ map<char, pair<char *, int>> static HuffmanCode(PNI args) {
         tree[i].setCode_len(strlen(tree[i].code));
         if (tree[i].getL() == 0 && tree[i].getR() == 0) {
             MII.insert({tree[i].getVal(), {tree[i].code, tree[i].getCode_len()}});
-            avglen += (double)tree[i].getCode_len() * (tree[i].getW() / all);
+//            avglen += (double)tree[i].getCode_len() * (tree[i].getW() / all);
         }
     }
-    cout << avglen << endl;
+//    cout << avglen << endl;
     return MII;
-}
-
-map<char *, char> static CodeTurnover(map<char, pair<char *, int>> MCC) {
-    map<char *, char> mcc;
-    auto it = MCC.begin();
-    while (it != MCC.end()) {
-        mcc.insert({it->second.first, it->first});
-        it++;
-    }
-    return mcc;
 }
 
 pair<char *, int> static Encode(char Buffer[], int length, map<char, pair<char *, int>> MCC) {
@@ -108,9 +98,8 @@ pair<char *, int> static Encode(char Buffer[], int length, map<char, pair<char *
     for (int i = 0; i < length; i++) {
         res += MCC[Buffer[i]].first;
     }
-    cout << length * 8 << " " << res.length() << endl;
     int remainder = res.length() % 8;
-    int cnt = (res.length() + ((remainder == 0)?0:(8 - remainder))) / 8;
+    int cnt = (res.length() + ((remainder == 0) ? 0 : (8 - remainder))) / 8;
     char *result = new char[cnt];
     for (int i = 1; i <= 8 - remainder; i++)
         res += "0";
@@ -138,12 +127,31 @@ inline string change(char c) {
     return data;
 }
 
-string static Decode (char Buffer[], int length, map<char*, char> MCC) {
+
+map<string, char> static CodeTurnover(map<char, pair<char *, int>> MCC) {
+    map<string, char> mcc;
+    auto it = MCC.begin();
+    while (it != MCC.end()) {
+        mcc.insert({it->second.first, it->first});
+        it++;
+    }
+    return mcc;
+}
+
+string static Decode(char Buffer[], int length, map<string, char> MCC) {
     string data;
     for (int i = 0; i < length; i++) {
         data += change(Buffer[i]);
     }
-    return data;
+    string tmp, DataOrigin;
+    for (int i = 0; i < data.length(); i++) {
+        tmp += data[i];
+        if (MCC.count(tmp)) {
+            DataOrigin += MCC[tmp];
+            tmp = "";
+        }
+    }
+    return DataOrigin;
 }
 
 #endif
