@@ -7,6 +7,7 @@
 
 #include <map>
 #include <iostream>
+#include <fstream>
 #include <queue>
 #include <cstring>
 #include "Node.h"
@@ -132,13 +133,21 @@ map<string, char> static CodeTurnover(map<char, pair<char *, int>> MCC) {
     map<string, char> mcc;
     auto it = MCC.begin();
     while (it != MCC.end()) {
+        cout << (int) it->first << " ";
+        for (int i = 0; i < it->second.second; i++)
+            cout << it->second.first[i + 1];
+        cout << endl;
+        it++;
+    }
+    getchar();
+    while (it != MCC.end()) {
         mcc.insert({it->second.first, it->first});
         it++;
     }
     return mcc;
 }
 
-string static Decode(char Buffer[], int length, map<string, char> MCC) {
+string static Decode(char *Buffer, int length, map<string, char> MCC) {
     string data;
     for (int i = 0; i < length; i++) {
         data += change(Buffer[i]);
@@ -153,5 +162,52 @@ string static Decode(char Buffer[], int length, map<string, char> MCC) {
     }
     return DataOrigin;
 }
+
+void static storeTree(map<char, pair<char *, int>> result, string path) {
+    fstream fout(path, ios::binary | ios::out);
+    fout.seekg(0, ios::beg);
+    auto it = result.begin();
+    while (it != result.end()) {
+        fout.write((char *) &it->first, sizeof(char));
+        fout.write((char *) &it->second.second, sizeof(int));
+        for (int i = 0; i < it->second.second; i++)
+            fout.write((char *) &it->second.first[i], sizeof(char));
+        it++;
+    }
+    fout.close();
+}
+
+map<char, pair<char *, int>> static attainTree(string path) {
+    map<char, pair<char *, int>> tmp;
+    fstream fin(path, ios::binary | ios::in);
+    fin.seekg(0, ios::beg);
+    char a;
+    int c;
+    while (!fin.eof()) {
+        fin.read((char *) &a, sizeof(char));
+        fin.read((char *) &c, sizeof(int));
+        char *b = new char[c];
+        for (int i = 0; i < c; i++) {
+            fin.read((char *) &b[i], sizeof(char));
+        }
+        tmp.insert({a, {b, c}});
+    }
+    fin.close();
+
+    map<char, pair<char *, int>> result;
+    auto it = tmp.begin();
+    while (it != tmp.end()) {
+        int a = it->second.second;
+        char *temp = new char[a + 1];
+        temp[a] = '\0';
+        for (int i = 0; i < a; i++) {
+            temp[i] = it->second.first[i];
+        }
+        result.insert({it->first, {temp, it->second.second}});
+        it++;
+    }
+    return result;
+}
+
 
 #endif
