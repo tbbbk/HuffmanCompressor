@@ -8,31 +8,41 @@ using namespace std;
 typedef pair<Node *, int> PNI;
 
 int main() {
-//    // 数据操作类
-//    FileOperation tbk;
-//    tbk.setPath("../src/Data/tbk.txt");
-//    tbk.BinaryRead();
+    // 数据操作类
+    FileOperation tbk;
+    tbk.setPath("../src/Data/test.dat");
+    tbk.BinaryRead();
+    //**********************************************************************
+    map<char, pair<char*, int>> weight = attainTree("../src/Data/test.tree");
+    string data = Decode(tbk.getBuffer(), tbk.Length(), CodeTurnover(weight));
+    tbk.setPath("../src/test.jpg");
+    tbk.setBuffer(const_cast<char *>(data.c_str()), data.length());
+    tbk.BinaryWrite();
+    //**********************************************************************
 //    auto q = CountData(tbk.getBuffer(), tbk.Length());
 //    PNI res = CreateHuffmanTree(q);
-//    // result 需要储存的哈夫曼编码结果
+    // result 需要储存的哈夫曼编码结果
 //    map<char, pair<char *, int>> result = HuffmanCode(res);
-//    storeTree(result, "../src/Data/tbk.tree");
-//    // 编码结果
+//    storeTree(result, "../src/Data/test.tree");
+    // 编码结果
 //    pair<char *, int> finalResult = Encode(tbk.getBuffer(), tbk.Length(), result);
-//    // 译码结果
+//    tbk.setPath("../src/Data/test.dat");
+//    tbk.setBuffer(finalResult.first, finalResult.second);
+//    tbk.BinaryWrite();
+    //**********************************************************************
 //
 //    auto it = result.begin();
+//    cout << result.size() << endl;
 //    while (it != result.end()) {
-//        cout << (int)it->first << ":" << it->second.first << endl;
+//        cout << (int)it->first << ":" << it->second.first << ":" << it->second.second << endl;
 //        it++;
 //    }
 
 
-    map<char, pair<char*, int>> tmp = attainTree("../src/Data/tbk.tree");
-    cout << tmp.size() << endl;
-    auto itt = tmp.begin();
-    while (itt != tmp.end()) {
-        cout << (int)itt->first << ":" << itt->second.first << endl;
-        itt++;
-    }
+//    cout << weight.size() << endl;
+//    auto itt = weight.begin();
+//    while (itt != weight.end()) {
+//        cout << (int)itt->first << ":" << itt->second.first << ":" << itt->second.second<< endl;
+//        itt++;
+//    }
 }

@@ -133,14 +133,6 @@ map<string, char> static CodeTurnover(map<char, pair<char *, int>> MCC) {
     map<string, char> mcc;
     auto it = MCC.begin();
     while (it != MCC.end()) {
-        cout << (int) it->first << " ";
-        for (int i = 0; i < it->second.second; i++)
-            cout << it->second.first[i + 1];
-        cout << endl;
-        it++;
-    }
-    getchar();
-    while (it != MCC.end()) {
         mcc.insert({it->second.first, it->first});
         it++;
     }
