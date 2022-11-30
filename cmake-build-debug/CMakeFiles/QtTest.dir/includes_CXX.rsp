@@ -1,0 +1,1 @@
+-I"D:/CLion_Code/Huffman_compressor/cmake-build-debug/QtTest_autogen/include" -isystem D:/Qt/5.14.2/mingw73_64/include -isystem D:/Qt/5.14.2/mingw73_64/include/QtCore -isystem "D:/Qt/5.14.2/mingw73_64/./mkspecs/win32-g++" -isystem D:/Qt/5.14.2/mingw73_64/include/QtGui -isystem D:/Qt/5.14.2/mingw73_64/include/QtANGLE -isystem D:/Qt/5.14.2/mingw73_64/include/QtWidgets

@@ -128,6 +128,43 @@ Huffman_compressor/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Huffman_compressor.dir\build.make CMakeFiles/Huffman_compressor.dir/build
 .PHONY : Huffman_compressor/fast
 
+#=============================================================================
+# Target rules for targets named Huffman_compressor_autogen
+
+# Build rule for target.
+Huffman_compressor_autogen: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Huffman_compressor_autogen
+.PHONY : Huffman_compressor_autogen
+
+# fast build rule for target.
+Huffman_compressor_autogen/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Huffman_compressor_autogen.dir\build.make CMakeFiles/Huffman_compressor_autogen.dir/build
+.PHONY : Huffman_compressor_autogen/fast
+
+Huffman_compressor_autogen/mocs_compilation.obj: Huffman_compressor_autogen/mocs_compilation.cpp.obj
+.PHONY : Huffman_compressor_autogen/mocs_compilation.obj
+
+# target to build an object file
+Huffman_compressor_autogen/mocs_compilation.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Huffman_compressor.dir\build.make CMakeFiles/Huffman_compressor.dir/Huffman_compressor_autogen/mocs_compilation.cpp.obj
+.PHONY : Huffman_compressor_autogen/mocs_compilation.cpp.obj
+
+Huffman_compressor_autogen/mocs_compilation.i: Huffman_compressor_autogen/mocs_compilation.cpp.i
+.PHONY : Huffman_compressor_autogen/mocs_compilation.i
+
+# target to preprocess a source file
+Huffman_compressor_autogen/mocs_compilation.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Huffman_compressor.dir\build.make CMakeFiles/Huffman_compressor.dir/Huffman_compressor_autogen/mocs_compilation.cpp.i
+.PHONY : Huffman_compressor_autogen/mocs_compilation.cpp.i
+
+Huffman_compressor_autogen/mocs_compilation.s: Huffman_compressor_autogen/mocs_compilation.cpp.s
+.PHONY : Huffman_compressor_autogen/mocs_compilation.s
+
+# target to generate assembly for a file
+Huffman_compressor_autogen/mocs_compilation.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Huffman_compressor.dir\build.make CMakeFiles/Huffman_compressor.dir/Huffman_compressor_autogen/mocs_compilation.cpp.s
+.PHONY : Huffman_compressor_autogen/mocs_compilation.cpp.s
+
 src/Utils/DataProcess.obj: src/Utils/DataProcess.cpp.obj
 .PHONY : src/Utils/DataProcess.obj
 
@@ -175,6 +212,30 @@ src/Utils/FileOperation.s: src/Utils/FileOperation.cpp.s
 src/Utils/FileOperation.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Huffman_compressor.dir\build.make CMakeFiles/Huffman_compressor.dir/src/Utils/FileOperation.cpp.s
 .PHONY : src/Utils/FileOperation.cpp.s
+
+src/Utils/GUI.obj: src/Utils/GUI.cpp.obj
+.PHONY : src/Utils/GUI.obj
+
+# target to build an object file
+src/Utils/GUI.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Huffman_compressor.dir\build.make CMakeFiles/Huffman_compressor.dir/src/Utils/GUI.cpp.obj
+.PHONY : src/Utils/GUI.cpp.obj
+
+src/Utils/GUI.i: src/Utils/GUI.cpp.i
+.PHONY : src/Utils/GUI.i
+
+# target to preprocess a source file
+src/Utils/GUI.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Huffman_compressor.dir\build.make CMakeFiles/Huffman_compressor.dir/src/Utils/GUI.cpp.i
+.PHONY : src/Utils/GUI.cpp.i
+
+src/Utils/GUI.s: src/Utils/GUI.cpp.s
+.PHONY : src/Utils/GUI.s
+
+# target to generate assembly for a file
+src/Utils/GUI.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Huffman_compressor.dir\build.make CMakeFiles/Huffman_compressor.dir/src/Utils/GUI.cpp.s
+.PHONY : src/Utils/GUI.cpp.s
 
 src/Utils/Node.obj: src/Utils/Node.cpp.obj
 .PHONY : src/Utils/Node.obj
@@ -232,13 +293,20 @@ help:
 	@echo ... depend
 	@echo ... edit_cache
 	@echo ... rebuild_cache
+	@echo ... Huffman_compressor_autogen
 	@echo ... Huffman_compressor
+	@echo ... Huffman_compressor_autogen/mocs_compilation.obj
+	@echo ... Huffman_compressor_autogen/mocs_compilation.i
+	@echo ... Huffman_compressor_autogen/mocs_compilation.s
 	@echo ... src/Utils/DataProcess.obj
 	@echo ... src/Utils/DataProcess.i
 	@echo ... src/Utils/DataProcess.s
 	@echo ... src/Utils/FileOperation.obj
 	@echo ... src/Utils/FileOperation.i
 	@echo ... src/Utils/FileOperation.s
+	@echo ... src/Utils/GUI.obj
+	@echo ... src/Utils/GUI.i
+	@echo ... src/Utils/GUI.s
 	@echo ... src/Utils/Node.obj
 	@echo ... src/Utils/Node.i
 	@echo ... src/Utils/Node.s

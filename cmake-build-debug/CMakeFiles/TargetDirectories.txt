@@ -1,3 +1,4 @@
 D:/CLion_Code/Huffman_compressor/cmake-build-debug/CMakeFiles/Huffman_compressor.dir
 D:/CLion_Code/Huffman_compressor/cmake-build-debug/CMakeFiles/edit_cache.dir
 D:/CLion_Code/Huffman_compressor/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+D:/CLion_Code/Huffman_compressor/cmake-build-debug/CMakeFiles/Huffman_compressor_autogen.dir

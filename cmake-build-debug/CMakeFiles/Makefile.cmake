@@ -15,6 +15,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "D:/CLion 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/CMakeGenericSystem.cmake"
   "D:/CLion 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/CMakeInitializeConfigs.cmake"
   "D:/CLion 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/CMakeLanguageInformation.cmake"
+  "D:/CLion 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/CMakeParseArguments.cmake"
   "D:/CLion 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/CMakeRCInformation.cmake"
   "D:/CLion 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/CMakeSystemSpecificInformation.cmake"
   "D:/CLion 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/CMakeSystemSpecificInitialize.cmake"
@@ -36,6 +37,38 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/3.23.2/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.23.2/CMakeRCCompiler.cmake"
   "CMakeFiles/3.23.2/CMakeSystem.cmake"
+  "D:/Qt/5.14.2/mingw73_64/lib/cmake/Qt5/Qt5Config.cmake"
+  "D:/Qt/5.14.2/mingw73_64/lib/cmake/Qt5/Qt5ConfigVersion.cmake"
+  "D:/Qt/5.14.2/mingw73_64/lib/cmake/Qt5/Qt5ModuleLocation.cmake"
+  "D:/Qt/5.14.2/mingw73_64/lib/cmake/Qt5Core/Qt5CoreConfig.cmake"
+  "D:/Qt/5.14.2/mingw73_64/lib/cmake/Qt5Core/Qt5CoreConfigExtras.cmake"
+  "D:/Qt/5.14.2/mingw73_64/lib/cmake/Qt5Core/Qt5CoreConfigExtrasMkspecDir.cmake"
+  "D:/Qt/5.14.2/mingw73_64/lib/cmake/Qt5Core/Qt5CoreConfigVersion.cmake"
+  "D:/Qt/5.14.2/mingw73_64/lib/cmake/Qt5Core/Qt5CoreMacros.cmake"
+  "D:/Qt/5.14.2/mingw73_64/lib/cmake/Qt5Gui/Qt5GuiConfig.cmake"
+  "D:/Qt/5.14.2/mingw73_64/lib/cmake/Qt5Gui/Qt5GuiConfigExtras.cmake"
+  "D:/Qt/5.14.2/mingw73_64/lib/cmake/Qt5Gui/Qt5GuiConfigVersion.cmake"
+  "D:/Qt/5.14.2/mingw73_64/lib/cmake/Qt5Gui/Qt5Gui_QGifPlugin.cmake"
+  "D:/Qt/5.14.2/mingw73_64/lib/cmake/Qt5Gui/Qt5Gui_QICNSPlugin.cmake"
+  "D:/Qt/5.14.2/mingw73_64/lib/cmake/Qt5Gui/Qt5Gui_QICOPlugin.cmake"
+  "D:/Qt/5.14.2/mingw73_64/lib/cmake/Qt5Gui/Qt5Gui_QJpegPlugin.cmake"
+  "D:/Qt/5.14.2/mingw73_64/lib/cmake/Qt5Gui/Qt5Gui_QMinimalIntegrationPlugin.cmake"
+  "D:/Qt/5.14.2/mingw73_64/lib/cmake/Qt5Gui/Qt5Gui_QOffscreenIntegrationPlugin.cmake"
+  "D:/Qt/5.14.2/mingw73_64/lib/cmake/Qt5Gui/Qt5Gui_QSvgIconPlugin.cmake"
+  "D:/Qt/5.14.2/mingw73_64/lib/cmake/Qt5Gui/Qt5Gui_QSvgPlugin.cmake"
+  "D:/Qt/5.14.2/mingw73_64/lib/cmake/Qt5Gui/Qt5Gui_QTgaPlugin.cmake"
+  "D:/Qt/5.14.2/mingw73_64/lib/cmake/Qt5Gui/Qt5Gui_QTiffPlugin.cmake"
+  "D:/Qt/5.14.2/mingw73_64/lib/cmake/Qt5Gui/Qt5Gui_QTuioTouchPlugin.cmake"
+  "D:/Qt/5.14.2/mingw73_64/lib/cmake/Qt5Gui/Qt5Gui_QWbmpPlugin.cmake"
+  "D:/Qt/5.14.2/mingw73_64/lib/cmake/Qt5Gui/Qt5Gui_QWebpPlugin.cmake"
+  "D:/Qt/5.14.2/mingw73_64/lib/cmake/Qt5Gui/Qt5Gui_QWindowsDirect2DIntegrationPlugin.cmake"
+  "D:/Qt/5.14.2/mingw73_64/lib/cmake/Qt5Gui/Qt5Gui_QWindowsIntegrationPlugin.cmake"
+  "D:/Qt/5.14.2/mingw73_64/lib/cmake/Qt5Gui/Qt5Gui_QXdgDesktopPortalThemePlugin.cmake"
+  "D:/Qt/5.14.2/mingw73_64/lib/cmake/Qt5Widgets/Qt5WidgetsConfig.cmake"
+  "D:/Qt/5.14.2/mingw73_64/lib/cmake/Qt5Widgets/Qt5WidgetsConfigExtras.cmake"
+  "D:/Qt/5.14.2/mingw73_64/lib/cmake/Qt5Widgets/Qt5WidgetsConfigVersion.cmake"
+  "D:/Qt/5.14.2/mingw73_64/lib/cmake/Qt5Widgets/Qt5WidgetsMacros.cmake"
+  "D:/Qt/5.14.2/mingw73_64/lib/cmake/Qt5Widgets/Qt5Widgets_QWindowsVistaStylePlugin.cmake"
   )
 
 # The corresponding makefile is:
@@ -46,10 +79,12 @@ set(CMAKE_MAKEFILE_OUTPUTS
 
 # Byproducts of CMake generate step:
 set(CMAKE_MAKEFILE_PRODUCTS
+  "CMakeFiles/Huffman_compressor_autogen.dir/AutogenInfo.json"
   "CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/Huffman_compressor.dir/DependInfo.cmake"
+  "CMakeFiles/Huffman_compressor_autogen.dir/DependInfo.cmake"
   )

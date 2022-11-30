@@ -71,21 +71,22 @@ preinstall:
 
 # The main recursive "clean" target.
 clean: CMakeFiles/Huffman_compressor.dir/clean
+clean: CMakeFiles/Huffman_compressor_autogen.dir/clean
 .PHONY : clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/Huffman_compressor.dir
 
 # All Build rule for target.
-CMakeFiles/Huffman_compressor.dir/all:
+CMakeFiles/Huffman_compressor.dir/all: CMakeFiles/Huffman_compressor_autogen.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Huffman_compressor.dir\build.make CMakeFiles/Huffman_compressor.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Huffman_compressor.dir\build.make CMakeFiles/Huffman_compressor.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\CLion_Code\Huffman_compressor\cmake-build-debug\CMakeFiles --progress-num=1,2,3,4,5 "Built target Huffman_compressor"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\CLion_Code\Huffman_compressor\cmake-build-debug\CMakeFiles --progress-num=1,2,3,4,5,6,7 "Built target Huffman_compressor"
 .PHONY : CMakeFiles/Huffman_compressor.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/Huffman_compressor.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start D:\CLion_Code\Huffman_compressor\cmake-build-debug\CMakeFiles 5
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\CLion_Code\Huffman_compressor\cmake-build-debug\CMakeFiles 8
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/Huffman_compressor.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start D:\CLion_Code\Huffman_compressor\cmake-build-debug\CMakeFiles 0
 .PHONY : CMakeFiles/Huffman_compressor.dir/rule
@@ -98,6 +99,32 @@ Huffman_compressor: CMakeFiles/Huffman_compressor.dir/rule
 CMakeFiles/Huffman_compressor.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Huffman_compressor.dir\build.make CMakeFiles/Huffman_compressor.dir/clean
 .PHONY : CMakeFiles/Huffman_compressor.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/Huffman_compressor_autogen.dir
+
+# All Build rule for target.
+CMakeFiles/Huffman_compressor_autogen.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Huffman_compressor_autogen.dir\build.make CMakeFiles/Huffman_compressor_autogen.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Huffman_compressor_autogen.dir\build.make CMakeFiles/Huffman_compressor_autogen.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\CLion_Code\Huffman_compressor\cmake-build-debug\CMakeFiles --progress-num=8 "Built target Huffman_compressor_autogen"
+.PHONY : CMakeFiles/Huffman_compressor_autogen.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/Huffman_compressor_autogen.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\CLion_Code\Huffman_compressor\cmake-build-debug\CMakeFiles 1
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/Huffman_compressor_autogen.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\CLion_Code\Huffman_compressor\cmake-build-debug\CMakeFiles 0
+.PHONY : CMakeFiles/Huffman_compressor_autogen.dir/rule
+
+# Convenience name for target.
+Huffman_compressor_autogen: CMakeFiles/Huffman_compressor_autogen.dir/rule
+.PHONY : Huffman_compressor_autogen
+
+# clean rule for target.
+CMakeFiles/Huffman_compressor_autogen.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Huffman_compressor_autogen.dir\build.make CMakeFiles/Huffman_compressor_autogen.dir/clean
+.PHONY : CMakeFiles/Huffman_compressor_autogen.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.
