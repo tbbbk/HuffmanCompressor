@@ -1,9 +1,4 @@
-> SCU 数据结构课设
-
-# 目录
-
-[TOC]
-
+> SCU 数据结构课设 （图床已挂XD
 # 数据结构与算法分析课程设计实验报告
 
 > 基于哈夫曼编码的压缩与解压缩软件
@@ -18,7 +13,7 @@
 
 ## 三、工具/准备工作
 
-首先在进行此次设计前，我先对于课上所讲授的哈夫曼编码的有关知识进行了系统的复习。实现本次课程设计所采用的C++集成开发环境软件为**[CLion](https://www.jetbrains.com/clion/)**，同时，为了实现最后的GUI功能，由于使用的软件为Clion并非Visual Studio，无法使用MFC库。因此为了实现软件最后的GUI功能，还安装了[**Qt5.14.2**](http://iso.mirrors.ustc.edu.cn/qtproject/archive/qt/5.14/5.14.2/qt-opensource-windows-x86-5.14.2.exe)用于实现最终的GUI功能。到此，所有前期准备工作全部完成。
+首先在进行此次设计前，我先对于课上所讲授的哈夫曼编码的有关知识进行了系统的复习。实现本次课程设计所采用的C++集成开发环境软件为[**CLion**](https://www.jetbrains.com/clion/)，同时，为了实现最后的GUI功能，由于使用的软件为Clion并非Visual Studio，无法使用MFC库。因此为了实现软件最后的GUI功能，还安装了[**Qt5.14.2**](http://iso.mirrors.ustc.edu.cn/qtproject/archive/qt/5.14/5.14.2/qt-opensource-windows-x86-5.14.2.exe)用于实现最终的GUI功能。到此，所有前期准备工作全部完成。
 
 ## 四、分析与实现
 
