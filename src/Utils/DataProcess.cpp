@@ -33,9 +33,7 @@ priority_queue<Node> static CountData(char Buffer[], int size) {
     return q;
 }
 
-typedef pair<Node *, int> PNI;
-
-PNI static CreateHuffmanTree(priority_queue<Node> q) {
+pair<Node *, int> static CreateHuffmanTree(priority_queue<Node> q) {
     Node *result = new Node[2 * q.size() + 1];
     Node VOID;
     result[0] = VOID;
@@ -49,7 +47,6 @@ PNI static CreateHuffmanTree(priority_queue<Node> q) {
         result[idx] = FirstNode;
         SecondNode.setIndex(++idx);
         result[idx] = SecondNode;
-        // 非叶子节点
         if (FirstNode.getL() != 0 && FirstNode.getR() != 0) {
             result[FirstNode.getL()].setP(FirstNode.getIndex());
             result[FirstNode.getR()].setP(FirstNode.getIndex());
@@ -70,9 +67,7 @@ PNI static CreateHuffmanTree(priority_queue<Node> q) {
     }
 }
 
-map<char, pair<char *, int>> static HuffmanCode(PNI args) {
-//    double all = 69640;
-//    double avglen = 0;
+map<char, pair<char *, int>> static HuffmanCode(pair<Node *, int> args) {
     map<char, pair<char *, int>> MII;
     Node *tree = args.first;
     int size = args.second;
@@ -87,10 +82,8 @@ map<char, pair<char *, int>> static HuffmanCode(PNI args) {
         tree[i].setCode_len(strlen(tree[i].code));
         if (tree[i].getL() == 0 && tree[i].getR() == 0) {
             MII.insert({tree[i].getVal(), {tree[i].code, tree[i].getCode_len()}});
-//            avglen += (double)tree[i].getCode_len() * (tree[i].getW() / all);
         }
     }
-//    cout << avglen << endl;
     return MII;
 }
 
@@ -112,14 +105,11 @@ pair<char *, int> static Encode(char Buffer[], int length, map<char, pair<char *
 
 inline string change(char c) {
     string data;
-    for (int i = 0; i < 8; i++) {
-        //  data+=c&(0x01<<i);
-        if ((c >> (i - 1)) & 0x01 == 1) {
+    for (int i = 0; i < 8; i++)
+        if ((c >> (i - 1)) & 0x01 == 1)
             data += "1";
-        } else {
+        else
             data += "0";
-        }
-    }
     for (int a = 1; a < 5; a++) {
         char x = data[a];
         data[a] = data[8 - a];
@@ -170,11 +160,9 @@ void static storeTree(map<char, pair<char *, int>> result, string path) {
 }
 
 map<char, pair<char *, int>> static attainTree(string path) {
-    map<char, pair<char *, int>> tmp;
+    map<char, pair<char *, int>> tmp;  char a;  int c;
     fstream fin(path, ios::binary | ios::in);
     fin.seekg(0, ios::beg);
-    char a;
-    int c;
     while (!fin.eof()) {
         fin.read((char *) &a, sizeof(char));
         fin.read((char *) &c, sizeof(int));
@@ -185,7 +173,6 @@ map<char, pair<char *, int>> static attainTree(string path) {
         tmp.insert({a, {b, c}});
     }
     fin.close();
-
     map<char, pair<char *, int>> result;
     auto it = tmp.begin();
     while (it != tmp.end()) {

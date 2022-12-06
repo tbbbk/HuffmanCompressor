@@ -1,4 +1,3 @@
-//This program uses to write and read functions.
 #include <queue>
 #include "Utils/DataProcess.cpp"
 #include "Utils/GUI.h"

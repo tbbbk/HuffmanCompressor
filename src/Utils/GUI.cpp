@@ -15,7 +15,7 @@
 using namespace std;
 
 GUI::GUI(QWidget *parent) : QDialog(parent) {
-    this->setFixedSize(300, 300);
+    this->setFixedSize(475, 400);
     compress = new QPushButton("压缩");
     decompress = new QPushButton("解压");
     Image = new QLabel("<h2><font color='red'>童柄魁</font>制作<h2>", this);
@@ -54,7 +54,7 @@ void GUI::Compress() {
         fileOp.setPath(Path);
         fileOp.BinaryRead();
         auto q = CountData(fileOp.getBuffer(), fileOp.Length());
-        PNI res = CreateHuffmanTree(q);
+        pair<Node *, int> res = CreateHuffmanTree(q);
         map<char, pair<char *, int>> result = HuffmanCode(res);
         try {
             system("md d:\\Huffman_Compressor");
@@ -105,7 +105,7 @@ void GUI::Decompress() {
         fileOp.setPath(resultPath);
         fileOp.setBuffer(const_cast<char *>(OriginData.c_str()), OriginData.length());
         fileOp.BinaryWrite();
-        QMessageBox::information(NULL, tr("恭喜"), tr("解压成功！") + path);
+        QMessageBox::information(NULL, tr("恭喜"), tr("解压成功！"));
     } else {
         QMessageBox::information(NULL, tr("Path"), tr("请选择文件"));
     }
